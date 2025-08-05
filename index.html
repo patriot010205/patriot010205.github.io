@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir South 2025 - Greenville Tech Conference</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-flask"></i>
+                <span>Elixir South</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#speakers" class="nav-link">Speakers</a></li>
+                <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                <li><a href="#venue" class="nav-link">Venue</a></li>
+                <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
+                <li><a href="#register" class="nav-link register-btn">Register (Sold Out)</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Elixir South</span> 2025
+                </h1>
+                <p class="hero-subtitle">
+                    The premier Elixir conference in the Southeast
+                </p>
+                <div class="hero-details">
+                    <div class="detail-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>September 25-27, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hyatt Regency Greenville</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-users"></i>
+                        <span>3 Days • Workshop • Lightning Talks</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#register" class="btn btn-primary">Register Now - $1,199</a>
+                    <a href="#schedule" class="btn btn-secondary">View Schedule</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="elixir-logo">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <div class="floating-elements">
+                    <div class="element element-1"></div>
+                    <div class="element element-2"></div>
+                    <div class="element element-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keynote Speakers -->
+    <section id="speakers" class="speakers">
+        <div class="container">
+            <h2 class="section-title">Keynote Speakers</h2>
+            <p class="section-subtitle">Learn from the creators and thought leaders of Elixir</p>
+            
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Chris McCord</h3>
+                    <p class="speaker-title">Creator of Phoenix</p>
+                    <p class="speaker-bio">
+                        The creator of the Phoenix Framework, bringing real-time web applications to the Elixir ecosystem.
+                    </p>
+                    <div class="speaker-talk">
+                        <strong>Talk:</strong> "Livebook - The Future of Interactive Elixir"
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>José Valim</h3>
+                    <p class="speaker-title">Creator of Elixir • Chief Adoption Officer at Dashbit</p>
+                    <p class="speaker-bio">
+                        The creator of Elixir programming language and a core member of the Rails team.
+                    </p>
+                    <div class="speaker-talk">
+                        <strong>Talk:</strong> "The Future of Elixir"
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Saša Jurić</h3>
+                    <p class="speaker-title">Author of "Elixir in Action"</p>
+                    <p class="speaker-bio">
+                        Author of the acclaimed book "Elixir in Action" and a seasoned Elixir developer with deep expertise in the BEAM ecosystem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2 class="section-title">Conference Schedule</h2>
+            <p class="section-subtitle">Three days of workshops, talks, and networking</p>
+            
+            <div class="schedule-tabs">
+                <button class="tab-btn active" data-day="day1">Day 1 - Workshop</button>
+                <button class="tab-btn" data-day="day2">Day 2 - Talks</button>
+                <button class="tab-btn" data-day="day3">Day 3 - Lightning Talks</button>
+            </div>
+
+            <div class="schedule-content">
+                <div class="day-schedule active" id="day1">
+                    <div class="day-header">
+                        <h3>September 25, 2025 - Workshop Day</h3>
+                        <p>Hands-on workshops to get you started or take your skills to the next level</p>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time">9:00 AM - 5:00 PM</div>
+                        <div class="content">
+                            <h4>Full-Day Elixir Workshop</h4>
+                            <p>Intensive hands-on workshop covering Elixir fundamentals and advanced concepts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-schedule" id="day2">
+                    <div class="day-header">
+                        <h3>September 26, 2025 - Main Conference</h3>
+                        <p>Keynotes and featured talks from industry experts</p>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="time">9:00 AM</div>
+                        <div class="content">
+                            <h4>The Future of Elixir</h4>
+                            <p><strong>José Valim</strong> - Keynote presentation</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time">10:30 AM</div>
+                        <div class="content">
+                            <h4>Livebook - The Future of Interactive Elixir</h4>
+                            <p><strong>Chris McCord</strong> - Keynote presentation</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time">2:00 PM</div>
+                        <div class="content">
+                            <h4>The Architecture Behind Deploying Livebook Apps with Livebook Teams</h4>
+                            <p><strong>Hugo Baraúna</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time">2:45 PM</div>
+                        <div class="content">
+                            <h4>Telemetry-Driven Development</h4>
+                            <p><strong>Noam Nisan</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time">3:30 PM</div>
+                        <div class="content">
+                            <h4>Introducing Elixir Observer</h4>
+                            <p><strong>Juan Jose Vicente</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-schedule" id="day3">
+                    <div class="day-header">
+                        <h3>September 27, 2025 - Community Day</h3>
+                        <p>Lightning talks and community presentations</p>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time">9:00 AM</div>
+                        <div class="content">
+                            <h4>Beyond Safe Migrations: Better Practices for Ecto + PostgreSQL</h4>
+                            <p><strong>David R. MacIver</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time">9:45 AM</div>
+                        <div class="content">
+                            <h4>UXIDs in Elixir/Ecto</h4>
+                            <p><strong>Adam Kiczula</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time">10:30 AM</div>
+                        <div class="content">
+                            <h4>Building Maintainable Applications in Elixir with Ecto: Why Domain Modeling Matters</h4>
+                            <p><strong>Nick Kuhn</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time">2:00 PM - 5:00 PM</div>
+                        <div class="content">
+                            <h4>Lightning Talks</h4>
+                            <p>Community-driven short presentations and demos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue -->
+    <section id="venue" class="venue">
+        <div class="container">
+            <h2 class="section-title">Venue & Location</h2>
+            
+            <div class="venue-content">
+                <div class="venue-info">
+                    <h3>Hyatt Regency Greenville</h3>
+                    <p class="venue-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        220 N Main St<br>
+                        Greenville, SC 29601
+                    </p>
+                    
+                    <div class="venue-features">
+                        <h4>Venue Features</h4>
+                        <ul>
+                            <li><i class="fas fa-wifi"></i> High-speed WiFi</li>
+                            <li><i class="fas fa-parking"></i> Ample parking available</li>
+                            <li><i class="fas fa-utensils"></i> On-site dining options</li>
+                            <li><i class="fas fa-wheelchair"></i> Fully accessible facilities</li>
+                        </ul>
+                    </div>
+
+                    <div class="venue-host">
+                        <h4>Hosted by</h4>
+                        <p><strong>Greenville Chamber of Commerce</strong></p>
+                        <p>Supporting the tech community in the beautiful Upstate of South Carolina</p>
+                    </div>
+                </div>
+                
+                <div class="venue-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Interactive Map</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="sponsors">
+        <div class="container">
+            <h2 class="section-title">Our Sponsors</h2>
+            <p class="section-subtitle">Thank you to our amazing sponsors who make this conference possible</p>
+            
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Dashbit</h3>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Hashrocket</h3>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Linode</h3>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Jump</h3>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Oban Pro</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="register" class="register">
+        <div class="container">
+            <div class="register-content">
+                <h2>Ready to Join Us?</h2>
+                <p>Secure your spot at Elixir South 2025</p>
+                
+                <div class="pricing-card">
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">1,199</span>
+                    </div>
+                    <div class="price-details">
+                        <h3>Full Conference Pass</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 3-day conference access</li>
+                            <li><i class="fas fa-check"></i> Workshop on Day 1</li>
+                            <li><i class="fas fa-check"></i> All keynotes and talks</li>
+                            <li><i class="fas fa-check"></i> Lightning talks session</li>
+                            <li><i class="fas fa-check"></i> Networking events</li>
+                            <li><i class="fas fa-check"></i> Conference materials</li>
+                            <li><i class="fas fa-check"></i> Meals and refreshments</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-disabled btn-large">Sold Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elixir South 2025</h3>
+                    <p>The premier Elixir conference in the United States, bringing together developers, architects, and enthusiasts.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#venue">Venue</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Hosted by Greenville Chamber of Commerce</p>
+                    <p>Greenville, SC</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elixir South. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
