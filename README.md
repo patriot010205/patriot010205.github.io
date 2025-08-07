@@ -2,6 +2,8 @@
 
 A modern, responsive website for the Elixir South 2024 tech conference in Greenville, SC.
 
+This is an exercise for a take home assigment.
+
 ## About the Conference
 
 Elixir South 2024 is the premier Elixir conference in the Southeast, featuring:

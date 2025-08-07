@@ -40,7 +40,7 @@
                     <span class="highlight">Elixir South</span> 2025
                 </h1>
                 <p class="hero-subtitle">
-                    The premier Elixir conference in the Southeast
+                    The premier Elixir conference in the United States
                 </p>
                 <div class="hero-details">
                     <div class="detail-item">
@@ -83,7 +83,7 @@
             <div class="speakers-grid">
                 <div class="speaker-card">
                     <div class="speaker-avatar">
-                        <i class="fas fa-user-circle"></i>
+                        <img class="img" src="./images/chris-mccord.jpg" alt="Chris McCord">
                     </div>
                     <h3>Chris McCord</h3>
                     <p class="speaker-title">Creator of Phoenix</p>
@@ -97,7 +97,7 @@
 
                 <div class="speaker-card">
                     <div class="speaker-avatar">
-                        <i class="fas fa-user-circle"></i>
+                        <img class="img" src="./images/jose-valim.jpg" alt="Jose Valim">
                     </div>
                     <h3>José Valim</h3>
                     <p class="speaker-title">Creator of Elixir • Chief Adoption Officer at Dashbit</p>
@@ -111,13 +111,17 @@
 
                 <div class="speaker-card">
                     <div class="speaker-avatar">
-                        <i class="fas fa-user-circle"></i>
+
+                        <img class="img" src="./images/Zach_Daniel.png" alt="Zach Daniel">
                     </div>
-                    <h3>Saša Jurić</h3>
-                    <p class="speaker-title">Author of "Elixir in Action"</p>
+                    <h3>Zach Daniel</h3>
+                    <p class="speaker-title">Creator of the Ash Framework</p>
                     <p class="speaker-bio">
-                        Author of the acclaimed book "Elixir in Action" and a seasoned Elixir developer with deep expertise in the BEAM ecosystem.
+                        Creator of the Ash framework - Elixir abstractions that make domain modeling easy.
                     </p>
+                    <div class="speaker-talk">
+                        <strong>Talk:</strong> "Ash - Domain modeling made easy"
+                    </div>
                 </div>
             </div>
         </div>
@@ -271,10 +275,17 @@
                 </div>
                 
                 <div class="venue-map">
-                    <div class="map-placeholder">
+                    <!-- <div class="map-placeholder">
                         <i class="fas fa-map"></i>
                         <p>Interactive Map</p>
-                    </div>
+                    </div> -->
+    <gmp-map
+      center="34.8531957,-82.3998908"
+      zoom="17"
+      map-id="DEMO_MAP_ID"
+      style="height: 400px"
+    >
+    </gmp-map>
                 </div>
             </div>
         </div>
@@ -395,7 +406,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-2vrD1Hz5NzDZOVsPyBtA3NjTE6vhVfM&libraries=maps">
+      defer></script>
     <script src="script.js"></script>
 </body>
 </html>
